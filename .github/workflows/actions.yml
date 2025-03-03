@@ -21,10 +21,6 @@ jobs:
           run: echo "'greeting time:' ${{ steps.hello-world-action.outputs.time }}"
         - name: docker action
           uses: docker://hello-world:latest
-        - name: Checkouts/checkout@v4
-          with:
-            fetch-depth: 2
-        - run: git checkout HEAD
         - name: Checkout tools repo
           uses: actions/checkout@v4
           with:
