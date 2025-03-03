@@ -21,9 +21,5 @@ jobs:
           run: echo "'greeting time:' ${{ steps.hello-world-action.outputs.time }}"
         - name: docker action
           uses: docker://hello-world:latest
-        - name: Checkout tools repo
-          uses: actions/checkout@v4
-          with:
-            repository: my-org/my-tools
-            path: my-tools
+
    
